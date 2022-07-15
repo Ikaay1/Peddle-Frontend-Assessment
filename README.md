@@ -41,6 +41,8 @@ The following dependencies were required and used for the assessment:
 - React-Icons - Got specific icons from a collection of libraries.
 - React-Infinite-Scroll-Component - Used to implement infinite scroll in the /github route.
 - React-Reveal - Implemented certain animations in the coming soon and contact components.
+- Styled-Components - Used to style elements in .js files in organized manners.
+- React-router-dom - Implemented routing to various pages
 
 ## What can be improved about this application
 
