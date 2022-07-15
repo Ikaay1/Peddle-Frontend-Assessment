@@ -1,0 +1,32 @@
+.statistics .box {
+  border: 1px solid white;
+  padding: 5px;
+  opacity: 1;
+}
+
+.statistics div p {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.statistics div p a:visited {
+  color: #707070;
+}
+
+.box a {
+  color: white;
+}
+
+@media (max-width: 350px) {
+  .statistics .box {
+    padding: 3px;
+  }
+
+  .statistics {
+    flex-direction: column;
+  }
+
+  .statistics div p {
+    margin-bottom: 1em;
+  }
+}

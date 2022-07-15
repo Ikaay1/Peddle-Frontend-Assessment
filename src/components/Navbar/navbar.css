@@ -1,0 +1,63 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3em;
+    margin-right: 3em;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding-right: 4em;
+    cursor: pointer;
+}
+
+.nav ul li a,
+.nav ul li button {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav ul .contactus-link {
+    background-color: #271AC1;
+    padding: 10px 30px;
+    border-radius: 51px;
+}
+
+@media(max-width: 1024px) {
+    .nav {
+        padding-right: 1em;
+    }
+
+}
+
+@media(max-width:768px) {
+    .nav ul li {
+        padding-right: 1.3em;
+    }
+}
+
+
+@media(max-width: 458px) {
+
+    .nav ul li a,
+    .nav ul li button {
+        font-size: 0.5em;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+
+    .nav ul .contactus-link {
+        padding: 0px 10px;
+        border-radius: 25px;
+    }
+}

@@ -1,0 +1,119 @@
+.contact-container {
+    background: transparent linear-gradient(180deg, #210045 0%, #0C0123 100%) 0% 0% no-repeat padding-box;
+    padding: 2em 4em 10em 2em;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.form-field {
+    margin-top: 3em;
+    border: none;
+    margin-inline: 0;
+    padding-block: 0;
+    padding-inline: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-field label {
+    font-size: 0.6em;
+    color: white;
+    font-weight: 300;
+    opacity: 0.8;
+    padding: 1em 0;
+}
+
+.form-field input[type='text'] {
+    background: white;
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.form-field input::placeholder,
+textarea::placeholder {
+
+    font-size: 0.7em;
+    opacity: 0.54;
+    color: black;
+}
+
+textarea:placeholder-shown {
+    padding: 15px;
+}
+
+textarea:focus {
+    outline: none;
+    padding: 15px;
+}
+
+textarea {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+form button {
+    display: inline;
+    margin-top: 2em;
+    padding: 13px 30px;
+    background: #271AC1;
+    color: white;
+    font-size: 0.68em;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+
+form h3 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    z-index: 10;
+}
+
+.arrow-right {
+    color: #281ac1e3;
+    font-size: 1.6em;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    left: -13%;
+    cursor: pointer;
+}
+
+.contact-circle {
+    width: 80px;
+    height: 80px;
+    background: transparent linear-gradient(177deg, #213F72 0%, #19073B 100%) 0% 0% no-repeat padding-box;
+    border-radius: 80px;
+    -moz-border-radius: 80px;
+    -webkit-border-radius: 80px;
+    top: 26.5%;
+    right: 30%;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-field input[type='text']:nth-of-type(1) {
+    z-index: 10;
+}
+
+
+@media(max-width: 550px) {
+    .contact-container {
+        padding: 2em 2em 12em 2em;
+    }
+
+    .contact-circle {
+        right: 20%;
+    }
+
+    .arrow-right {
+        left: 0;
+    }
+}

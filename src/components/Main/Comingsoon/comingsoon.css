@@ -1,0 +1,251 @@
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4em;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.3em;
+}
+
+p,
+h1 {
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.homepage-showcase {
+    font-size: 0.73em;
+    padding: 1.5em 0;
+}
+
+.homepage-showcase span {
+    opacity: 0.7;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter-container div {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-right: 0.4em;
+    border-radius: 4px;
+}
+
+.counter-container div:nth-of-type(1) {
+    padding: 10px 21px;
+}
+
+.counter-container div:nth-of-type(2) {
+    padding: 10px 19px;
+}
+
+.counter-container p {
+    color: #000000;
+    text-align: center;
+}
+
+.counter-container p:nth-of-type(1) {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.counter-container p:nth-of-type(2) {
+    font-size: 0.6em;
+    font-weight: 500;
+
+}
+
+.input-container {
+    padding: 2em 0 0 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"],
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.input-container input[type="text"] {
+    margin-left: 1em;
+    border-bottom: 1px solid #707070;
+    padding: 0.3em;
+    width: 130px;
+
+}
+
+.input-container input:focus {
+    color: #707070;
+}
+
+.input-container input::placeholder {
+    font-size: 0.75em;
+    color: #707070;
+    margin-left: 25px;
+    padding-left: 5px;
+}
+
+.waitinglist-container {
+    background-color: #fff;
+    padding: 0 0 0 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    margin-top: 1.8em;
+
+}
+
+
+
+.waitinglist-container input::placeholder {
+    color: #000000;
+    font-size: 0.85em;
+}
+
+.waitinglist-container div {
+    background-color: #271AC1;
+    padding: 10px 15px;
+    border-radius: 25px;
+
+}
+
+.waitinglist-container button {
+
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.circle-1 {
+    width: 80px;
+    height: 80px;
+    background: transparent linear-gradient(177deg, #7F1E7B 0%, #19073B 100%) 0% 0% no-repeat padding-box;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 50%;
+    top: 15%;
+    left: 12%;
+}
+
+.circle-2 {
+    width: 60px;
+    height: 60px;
+    background: transparent linear-gradient(177deg, #213F72 0%, #19073B 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    top: 38%;
+    right: 23%;
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+    position: absolute;
+    z-index: -1;
+
+}
+
+.circle-3 {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background: transparent linear-gradient(177deg, #7F4129 0%, #1C0C28 100%) 0% 0% no-repeat padding-box;
+    left: 30%;
+    top: 35em;
+
+}
+
+.react-reveal.waitinglist-container {
+    opacity: 1 !important;
+}
+
+
+@media(max-width: 1340px) {
+    .comingsoon {
+        height: 100%;
+    }
+}
+
+@media(max-width:1250px) {
+
+    .circle-1,
+    .circle-2,
+    .circle-3 {
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 768px) {
+
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .input-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 0;
+    }
+
+    .homepage-showcase {
+        font-size: 0.6em;
+    }
+}
+
+
+
+@media(max-width: 425px) {
+    .waitinglist-container {
+        width: 320px;
+    }
+
+    .waitinglist-container button {
+        font-size: 0.6em;
+    }
+
+    .waitinglist-container div {
+        padding: 5px 10px;
+    }
+
+
+}
+
+@media(max-width: 355px) {
+    .waitinglist-container {
+        flex-direction: column;
+        background: none;
+    }
+
+
+
+
+    .waitinglist-container input[type='text'] {
+        background: white;
+        margin-bottom: 1.5em;
+        padding: 10px 15px;
+        border-radius: 30px;
+    }
+}

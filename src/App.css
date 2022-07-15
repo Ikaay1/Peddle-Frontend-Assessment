@@ -1,0 +1,36 @@
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.nav,
+.homepage {
+    padding: 1.5em 4em;
+    overflow-x: hidden;
+
+}
+
+body {
+    background: #1F0042 0% 0% no-repeat padding-box;
+    ;
+    /* background: transparent url(../assets/background.png) 0% 0% no-repeat padding-box;
+    background-size: 100% 100%; */
+    overflow-x: hidden;
+
+}
+
+@media(max-width: 1024px) {
+
+    .nav,
+    .homepage {
+        padding: 1em 1.5em;
+        margin-right: 0;
+    }
+}
